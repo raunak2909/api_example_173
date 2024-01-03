@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:api_example_173/data_model.dart';
+import 'package:api_example_173/product_page.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as httpClient;
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: ProductPage(),
     );
   }
 }
@@ -37,7 +38,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getQuotes();
   }
